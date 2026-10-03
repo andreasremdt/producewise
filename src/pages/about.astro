@@ -1,0 +1,109 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+const entries = (await getCollection('produce')).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
+);
+---
+
+<Layout title="About & sources">
+  <div class="page-intro">
+    <span class="eyebrow">GOOD ADVICE HAS ROOTS</span>
+    <h1>
+      A little wiser.
+      <br />
+      <span>A little less waste.</span>
+    </h1>
+    <p>Friendly, practical guidance for the produce already in your kitchen.</p>
+  </div>
+  <div class="about-grid">
+    <section class="info-card">
+      <Icon name="leaf" size={28} />
+      <h2>Freshness starts with a small habit.</h2>
+      <p>
+        Knowing where to put an avocado or when to wash berries can make everyday cooking a little
+        easier. ProduceWise puts the useful answer first, then leaves room for curiosity.
+      </p>
+      <p>
+        We’re starting with 10 fruits and vegetables. Each guide connects practical advice to its
+        sources.
+      </p>
+    </section>
+    <section class="info-card warm">
+      <Icon name="book" size={28} />
+      <h2>Clear sources. Clear limits.</h2>
+      <p>
+        Storage advice comes from university extension services, the FDA, USDA FSIS, and identified
+        produce boards. Each guide lists what its sources support and when they were checked.
+      </p>
+      <p>
+        Keeping times describe estimated quality, not guaranteed safety. Our initial source review
+        is AI-assisted. It does not replace professional food-safety advice or product recalls.
+      </p>
+    </section>
+  </div>
+  <section class="guide-section about-section">
+    <h2>Nutrition you can trace.</h2>
+    <p>
+      We use <a href="https://fdc.nal.usda.gov/">USDA FoodData Central</a>, preferring Foundation
+      Foods and using SR Legacy where it better matches the food. Each guide identifies the exact
+      record, food form, and edible-portion basis. Values are typical estimates per 100 g, with
+      sensible rounding.
+    </p>
+    <p>
+      Missing data stays missing. We do not treat it as zero or quietly borrow it from another food.
+      Nutrition updates are checked and saved separately from the website; browsing never needs a
+      USDA account or API key.
+    </p>
+  </section>
+  <section class="guide-section about-section">
+    <h2>Your guides, on your device.</h2>
+    <p>
+      Favorites stay in this browser’s local storage. We don’t require an account or send your saved
+      list to a server. Saving a guide also attempts an offline download of the page, photo, and
+      nutrition; a visible status tells you when it’s ready.
+    </p>
+    <p>
+      Clearing browser data or running short on space can remove downloads. Saved guides can be
+      refreshed from the saved page. Uncached pages and external source links need a connection.
+    </p>
+    <details class="source-details">
+      <summary>
+        Keep ProduceWise on your home screen <Icon name="chevron" size={16} />
+      </summary>
+      <p>
+        On supported browsers, use “Install app” or “Add to Home Screen” from the browser menu. On
+        iPhone or iPad, use Safari’s Share menu, then “Add to Home Screen.” Availability depends on
+        your browser. Save the guides you want offline and check for “Ready offline” before
+        disconnecting.
+      </p>
+    </details>
+  </section>
+  <section class="guide-section" id="image-credits">
+    <span class="eyebrow">THE PEOPLE BEHIND THE PICTURES</span>
+    <h2>Photography & credits.</h2>
+    <p>
+      Photos are hosted locally for fast loading and offline use. They have been resized and
+      converted to WebP; CSS blends their backgrounds with the cards. Each adapted image retains its
+      original license.
+    </p>
+    <div class="credits-grid">
+      {entries.map((e) => (
+        <div>
+          <h3>{e.data.name}</h3>
+          <p>
+            <a href={e.data.image.source}>{e.data.image.author}</a>
+          </p>
+          <a href={e.data.image.licenseUrl}>{e.data.image.license} ↗</a>
+        </div>
+      ))}
+    </div>
+    <p>
+      For images licensed under GNU FDL 1.2, the{' '}
+      <a href="/licenses/gfdl-1.2.txt">full license is included here</a>. USDA data is{' '}
+      <a href="https://fdc.nal.usda.gov/api-guide/">public domain (CC0)</a>. ProduceWise is
+      independent and is not endorsed by these providers.
+    </p>
+  </section>
+</Layout>

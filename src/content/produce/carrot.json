@@ -1,0 +1,66 @@
+{
+  "name": "Carrots",
+  "singular": "Carrot",
+  "aliases": ["carrot", "carrots"],
+  "category": "vegetable",
+  "tags": ["root vegetables", "crunchy"],
+  "color": "#FAE7D5",
+  "description": "Crisp, colorful roots that are equally at home in a lunchbox or roasting pan. Remove leafy tops before storing.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "1–2 weeks",
+      "preparation": "Remove tops; use a ventilated bag.",
+      "advice": "Keep the roots in the crisper and wash before preparing.",
+      "caution": "Store the roots separately from their leafy tops.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose firm roots without damaged areas.",
+    "Select the size you need for your recipe."
+  ],
+  "freshness": "Discard carrots that look rotten. A storage estimate cannot guarantee safety.",
+  "leftovers": ["Grate into a crunchy slaw.", "Roast with a little olive oil."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "University of Maryland Extension · Storing garden produce",
+      "url": "https://extension.umd.edu/resource/storing-garden-fruits-and-vegetables",
+      "supports": "Home storage, keeping-time estimates, and preparation"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing carrots",
+      "url": "https://nchfp.uga.edu/how/freeze/vegetable/freezing-carrots/",
+      "supports": "Preparation before freezing and preservation method"
+    }
+  ],
+  "slug": "carrot",
+  "nutrition": "carrot",
+  "order": 7,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "carrot.jpg",
+    "alt": "Carrots on a plain background",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Vegetable-Carrot-Bundle-wStalks.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Wash, peel, and slice. Water-blanch slices for 2 minutes, cool promptly, drain, and pack with ½ inch headspace. Seal and freeze.",
+    "quality": "Use frozen carrots in cooked dishes.",
+    "sourceId": "freezing"
+  }
+}

@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ProduceImage from './ProduceImage.astro';
+import Icon from './Icon.astro';
+import FavoriteButton from './FavoriteButton.astro';
+interface Props {
+  entry: CollectionEntry<'produce'>;
+  eager?: boolean;
+}
+const { entry, eager = false } = Astro.props;
+const p = entry.data;
+const s = p.storage.find((s) => s.condition === p.defaultCondition)!;
+const icons = {
+  Refrigerator: 'fridge',
+  'Room temperature': 'sun',
+  'Cool, dark place': 'box',
+  Freezer: 'snow',
+};
+---
+
+<article
+  class="produce-card"
+  data-card={entry.id}
+  data-name={p.name}
+  data-category={p.category}
+  data-search={[p.name, ...p.aliases, ...p.tags].join(' ')}
+  style={`--produce-color:${p.color}`}
+>
+  <div class="card-visual">
+    <span class="category-label">{p.category === 'fruit' ? 'Fruit' : 'Vegetable'}</span>
+    <FavoriteButton id={entry.id} name={p.name} />
+    <a href={`/produce/${p.slug}/`} tabindex="-1" aria-hidden="true">
+      <ProduceImage id={entry.id} alt="" eager={eager} />
+    </a>
+    <span class="card-image-credit">
+      <a href={p.image.source}>{p.image.author}</a> ·{' '}
+      <a href={p.image.license.startsWith('GFDL') ? '/licenses/gfdl-1.2.txt' : p.image.licenseUrl}>
+        {p.image.license}
+      </a>
+    </span>
+  </div>
+  <div class="card-content">
+    <a class="card-title" href={`/produce/${p.slug}/`}>
+      <h3>{p.name}</h3>
+      <Icon name="arrow" size={18} />
+    </a>
+    <p class="card-storage">
+      <Icon name={icons[s.location]} size={15} />
+      {s.location}
+      <span class="dot">·</span>
+      <span>{s.time}</span>
+    </p>
+    <span class="offline-status" data-offline-status={entry.id}></span>
+  </div>
+</article>

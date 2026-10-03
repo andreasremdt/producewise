@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="You’re offline">
+  <div class="empty-state page-empty">
+    <Icon name="offline" size={44} />
+    <h1>
+      A little connection
+      <br />
+      is missing.
+    </h1>
+    <p>This page hasn’t been downloaded yet. Your saved, downloaded guides are still available.</p>
+    <a class="button" href="/favorites/">
+      Open saved guides <Icon name="arrow" size={17} />
+    </a>
+  </div>
+</Layout>

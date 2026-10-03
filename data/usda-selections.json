@@ -1,0 +1,82 @@
+[
+  {
+    "id": "avocado",
+    "fdcId": 2710824,
+    "description": "Avocado, Hass, peeled, raw",
+    "dataType": "Foundation",
+    "preparation": "raw Hass avocado, peeled; flesh only",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "banana",
+    "fdcId": 1105314,
+    "description": "Bananas, ripe and slightly ripe, raw",
+    "dataType": "Foundation",
+    "preparation": "raw, ripe or slightly ripe; peel removed",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "strawberry",
+    "fdcId": 2346409,
+    "description": "Strawberries, raw",
+    "dataType": "Foundation",
+    "preparation": "raw; edible fruit, tops removed",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "blueberry",
+    "fdcId": 2346411,
+    "description": "Blueberries, raw",
+    "dataType": "Foundation",
+    "preparation": "raw; edible berries",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "mango",
+    "fdcId": 2710833,
+    "description": "Mango, Tommy Atkins, peeled, raw",
+    "dataType": "Foundation",
+    "preparation": "raw Tommy Atkins mango, peeled; flesh only",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "spinach",
+    "fdcId": 168462,
+    "description": "Spinach, raw",
+    "dataType": "SR Legacy",
+    "preparation": "raw; edible leaves",
+    "reason": "No raw spinach match in the reviewed Foundation raw-food search; SR Legacy supplies one coherent raw record."
+  },
+  {
+    "id": "potato",
+    "fdcId": 170026,
+    "description": "Potatoes, flesh and skin, raw",
+    "dataType": "SR Legacy",
+    "preparation": "raw; flesh and skin",
+    "reason": "SR Legacy retains flesh and skin; the available Foundation matches are peeled and would change the intended basis."
+  },
+  {
+    "id": "carrot",
+    "fdcId": 2258586,
+    "description": "Carrots, mature, raw",
+    "dataType": "Foundation",
+    "preparation": "raw; mature carrots, edible root",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "eggplant",
+    "fdcId": 2685577,
+    "description": "Eggplant, raw",
+    "dataType": "Foundation",
+    "preparation": "raw; edible fruit",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  },
+  {
+    "id": "zucchini",
+    "fdcId": 2685568,
+    "description": "Squash, summer, green, zucchini, includes skin, raw",
+    "dataType": "Foundation",
+    "preparation": "raw green zucchini; includes skin",
+    "reason": "Foundation Foods match; the displayed form and variety are explicitly labeled."
+  }
+]

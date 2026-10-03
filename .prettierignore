@@ -1,0 +1,8 @@
+node_modules
+.astro
+dist
+pnpm-lock.yaml
+public/licenses
+data/source-snapshots
+test-results
+playwright-report

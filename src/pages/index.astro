@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import ProduceImage from '../components/ProduceImage.astro';
+import Catalogue from '../components/Catalogue.astro';
+---
+
+<Layout>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">
+        <Icon name="spark" size={15} /> FRESH FOOD. LESS WASTE.
+      </span>
+      <h1>
+        A little knowledge.
+        <br />A lot more <span>fresh.</span>
+      </h1>
+      <p>
+        Your friendly guide to storing fruits and vegetables.
+        <br class="desktop-break" /> Keep the good stuff good, for longer.
+      </p>
+      <form class="search-form" action="/browse/" role="search">
+        <Icon name="search" size={22} />
+        <label for="hero-search" class="sr-only">
+          What produce are you looking for?
+        </label>
+        <input
+          id="hero-search"
+          type="search"
+          name="q"
+          placeholder="What’s in your kitchen?"
+          autocomplete="off"
+        />
+        <button class="button" type="submit">
+          Let’s find out <Icon name="arrow" size={17} />
+        </button>
+      </form>
+      <div class="suggested">
+        <span>Try searching</span>
+        <a href="/browse/?q=avocado">Avocado</a>
+        <a href="/browse/?q=banana">Banana</a>
+        <a href="/browse/?q=spinach">Spinach</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="Avocado, banana, and strawberries">
+      <div class="hero-orbit"></div>
+      <span class="hero-spark spark-one">✳</span>
+      <span class="hero-spark spark-two">✳</span>
+      <div class="hero-fruit fruit-banana">
+        <ProduceImage id="banana" alt="A yellow banana" eager />
+      </div>
+      <div class="hero-fruit fruit-avocado">
+        <ProduceImage id="avocado" alt="A whole and halved avocado" eager />
+      </div>
+      <div class="hero-fruit fruit-strawberry">
+        <ProduceImage id="strawberry" alt="A ripe strawberry" eager />
+      </div>
+      <div class="fresh-note">
+        <span>
+          <Icon name="leaf" size={19} />
+        </span>
+        <div>
+          A little wiser.
+          <br />
+          <strong>A whole lot fresher.</strong>
+        </div>
+      </div>
+      <span class="hero-credit">
+        Avocado:{' '}
+        <a href="https://commons.wikimedia.org/wiki/File:Avocado_with_cross_section_edit.jpg">
+          Muhammad Mahdi Karim
+        </a>{' '}
+        · <a href="/licenses/gfdl-1.2.txt">GFDL 1.2</a>
+        <br />
+        Banana: Evan-Amos · CC BY-SA 3.0. Strawberry: FoeNyx · CC BY-SA 3.0.{' '}
+        <a href="/about/#image-credits">Credits</a>
+      </span>
+    </div>
+  </section>
+  <div class="promise-strip">
+    <div>
+      <span class="promise-icon">
+        <Icon name="box" />
+      </span>
+      <span>
+        <strong>A home for every harvest</strong>
+        <small>Fridge, counter, or somewhere cool?</small>
+      </span>
+    </div>
+    <div>
+      <span class="promise-icon">
+        <Icon name="clock" />
+      </span>
+      <span>
+        <strong>Make the fresh last</strong>
+        <small>Simple tips for a little more time.</small>
+      </span>
+    </div>
+    <div>
+      <span class="promise-icon">
+        <Icon name="heart" />
+      </span>
+      <span>
+        <strong>Good to know. Easy to save.</strong>
+        <small>Your favorite guides, always close.</small>
+      </span>
+    </div>
+  </div>
+  <Catalogue home />
+  <section class="wisdom-banner">
+    <span class="wisdom-icon">
+      <Icon name="leaf" size={35} />
+    </span>
+    <div>
+      <span class="eyebrow">A LITTLE PRODUCE WISDOM</span>
+      <h2>Your fridge isn’t for everything.</h2>
+      <p>
+        Some produce needs a little counter time first. Find the right spot for what’s in your
+        kitchen.
+      </p>
+    </div>
+    <a href="/browse/" class="button button-light">
+      Get to know your produce <Icon name="arrow" size={17} />
+    </a>
+  </section>
+</Layout>

@@ -1,0 +1,66 @@
+{
+  "name": "Eggplant",
+  "singular": "Eggplant",
+  "aliases": ["eggplant", "eggplants", "aubergine", "aubergines", "brinjal"],
+  "category": "vegetable",
+  "tags": ["cooking vegetables", "tender"],
+  "color": "#EFE3F1",
+  "description": "Also called aubergine. A glossy-skinned cooking vegetable, from deep purple to the striped variety pictured here.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "3–4 days",
+      "preparation": "Store whole and handle gently.",
+      "advice": "Plan to use it soon; prolonged cold storage can affect its quality.",
+      "caution": "Do not leave it forgotten in the crisper for a week.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose an intact, firm fruit without bruises.",
+    "Look for fresh-looking skin and a sound stem."
+  ],
+  "freshness": "Discard rotten fruit. Surface appearance cannot rule out contamination.",
+  "leftovers": ["Roast for a smoky dip.", "Cube into a tomato stew."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "Food Keeper · University of Georgia Extension",
+      "url": "https://extension.uga.edu/content/dam/extension-county-offices/gwinnett-county/facs/Food_Keeper_Guide.pdf",
+      "supports": "Home refrigerator storage estimates"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing eggplant",
+      "url": "https://nchfp.uga.edu/how/freeze/vegetable/freezing-eggplant/",
+      "supports": "Preparation before freezing and preservation method"
+    }
+  ],
+  "slug": "eggplant",
+  "nutrition": "eggplant",
+  "order": 8,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "eggplant.jpg",
+    "alt": "A striped Graffiti eggplant",
+    "author": "Tiia Monto",
+    "source": "https://commons.wikimedia.org/wiki/File:Graffiti_Eggplant.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Use the linked tested method: peeled ⅓-inch slices are blanched for 4 minutes in boiling water with lemon juice, then cooled, drained, and packed. See the source for the exact water-to-juice ratio.",
+    "quality": "Freezing softens the flesh; plan to cook it.",
+    "sourceId": "freezing"
+  }
+}

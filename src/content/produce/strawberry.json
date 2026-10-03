@@ -1,0 +1,72 @@
+{
+  "name": "Strawberries",
+  "singular": "Strawberry",
+  "aliases": ["strawberry", "strawberries"],
+  "category": "fruit",
+  "tags": ["berries", "delicate"],
+  "color": "#F8E3E0",
+  "description": "Sweet, fragrant berries with leafy green caps. Keep them cool and dry, and wash just before eating.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "2–3 days",
+      "preparation": "Store unwashed, with caps attached.",
+      "advice": "Use a container in the crisper. Check for damaged berries when you unpack.",
+      "caution": "Moisture encourages spoilage; wash just before use.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose sound berries without crushed spots or visible mold.",
+    "Check the bottom of the punnet as well as the top."
+  ],
+  "freshness": "Discard moldy berries, then check the fruit that touched them. Do not trim mold off soft berries.",
+  "leftovers": ["Spoon sliced berries over yogurt.", "Blend sound, ripe berries into a smoothie."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "University of Maryland Extension · Storing garden produce",
+      "url": "https://extension.umd.edu/resource/storing-garden-fruits-and-vegetables",
+      "supports": "Home storage, keeping-time estimates, and preparation"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "mold",
+      "title": "USDA FSIS · Moldy fruit",
+      "url": "https://ask.fsis.usda.gov/article/What-if-I-find-moldy-fruit-in-a-container-with-other-fruit",
+      "supports": "Discarding moldy soft fruit and checking nearby fruit"
+    },
+    {
+      "id": "freezing",
+      "title": "University of Minnesota Extension · Freezing fruit",
+      "url": "https://extension.umn.edu/food/preparing/cooking-at-home/food-preservation/freezing/freezing-fruit",
+      "supports": "Dry packing and texture changes"
+    }
+  ],
+  "slug": "strawberry",
+  "nutrition": "strawberry",
+  "order": 2,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "strawberry.jpg",
+    "alt": "Strawberries on a plain background",
+    "author": "FoeNyx",
+    "source": "https://commons.wikimedia.org/wiki/File:FraiseFruitPhoto.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Wash, remove the caps, and dry. Spread on a tray to freeze, then transfer to a freezer bag or container.",
+    "quality": "Thawed fruit is softer; use it in smoothies or sauces.",
+    "sourceId": "freezing"
+  }
+}

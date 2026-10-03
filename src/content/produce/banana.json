@@ -1,0 +1,83 @@
+{
+  "name": "Bananas",
+  "singular": "Banana",
+  "aliases": ["banana", "bananas"],
+  "category": "fruit",
+  "tags": ["tropical", "ripens at home"],
+  "color": "#FAF0C9",
+  "description": "The everyday fruit-bowl favorite. Let it ripen in the open, then use the fridge to buy a little extra time.",
+  "defaultCondition": "unripe",
+  "storage": [
+    {
+      "condition": "unripe",
+      "label": "Unripe",
+      "location": "Room temperature",
+      "time": "Until yellow",
+      "preparation": "Leave whole and unpeeled.",
+      "advice": "Let firm bananas ripen on the counter, checking them each day.",
+      "caution": "Wait until ripe before refrigerating.",
+      "sourceIds": ["storage"]
+    },
+    {
+      "condition": "ripe",
+      "label": "Ripe",
+      "location": "Refrigerator",
+      "time": "A few more days",
+      "preparation": "Keep the peel on.",
+      "advice": "Refrigerating a ripe banana slows further softening.",
+      "caution": "The peel may darken in the fridge; check the flesh separately.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose yellow bananas for eating soon, or greener fruit for later.",
+    "Avoid badly bruised or damaged fruit."
+  ],
+  "freshness": "Soft, ripe flesh works well in baking. Discard rotten fruit or fruit with mold.",
+  "leftovers": ["Mash ripe bananas into pancake batter.", "Bake into banana bread."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "Utah State University Extension · Bananas",
+      "url": "https://extension.usu.edu/nutrition/research/bananas",
+      "supports": "Ripening, refrigeration, buying, and kitchen uses"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing bananas",
+      "url": "https://nchfp.uga.edu/how/freeze/fruits/freezing-bananas/",
+      "supports": "Preparation before freezing and preservation method"
+    },
+    {
+      "id": "neighbors",
+      "title": "Utah State University Extension · Postharvest handling",
+      "url": "https://extension.usu.edu/vegetableguide/production/postharvest-handling",
+      "supports": "Ethylene-producing bananas and ethylene-sensitive vegetables"
+    }
+  ],
+  "slug": "banana",
+  "nutrition": "banana",
+  "order": 1,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "banana.jpg",
+    "alt": "Bananas on a plain background",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Banana-Single.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Use sound, ripe bananas. Peel and mash, then pack into freezer containers with ½ inch headspace. Seal and freeze.",
+    "quality": "The thawed mash suits baking better than fruit salad.",
+    "sourceId": "freezing"
+  },
+  "together": "Ripening bananas release ethylene. Keep them away from sensitive vegetables, such as leafy greens."
+}

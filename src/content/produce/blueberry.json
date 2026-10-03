@@ -1,0 +1,69 @@
+{
+  "name": "Blueberries",
+  "singular": "Blueberry",
+  "aliases": ["blueberry", "blueberries"],
+  "category": "fruit",
+  "tags": ["berries", "snacking"],
+  "color": "#E9E8F5",
+  "description": "Little blue berries that need very little fuss. A cool, dry home is the best place to start.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "2–3 days",
+      "preparation": "Keep unwashed in a container.",
+      "advice": "Refrigerate in the crisper and wash only when you are ready to eat.",
+      "caution": "Remove crushed or spoiled berries before storing.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": ["Look for intact berries without wet, crushed patches.", "Skip containers with mold."],
+  "freshness": "Throw away moldy berries and inspect neighboring fruit. Mold may extend below the surface.",
+  "leftovers": ["Fold into oatmeal or muffin batter.", "Add a handful to a smoothie."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "University of Maryland Extension · Storing garden produce",
+      "url": "https://extension.umd.edu/resource/storing-garden-fruits-and-vegetables",
+      "supports": "Home storage, keeping-time estimates, and preparation"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "mold",
+      "title": "USDA FSIS · Moldy fruit",
+      "url": "https://ask.fsis.usda.gov/article/What-if-I-find-moldy-fruit-in-a-container-with-other-fruit",
+      "supports": "Discarding moldy soft fruit and checking nearby fruit"
+    },
+    {
+      "id": "freezing",
+      "title": "University of Minnesota Extension · Freezing fruit",
+      "url": "https://extension.umn.edu/food/preparing/cooking-at-home/food-preservation/freezing/freezing-fruit",
+      "supports": "Fruit selection, tray freezing, and quality"
+    }
+  ],
+  "slug": "blueberry",
+  "nutrition": "blueberry",
+  "order": 3,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "blueberry.jpg",
+    "alt": "Blueberries on a plain background",
+    "author": "US Centers for Disease Control and Prevention",
+    "source": "https://commons.wikimedia.org/wiki/File:CDC_blue.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Use sound berries. For a dry pack, spread on a tray, freeze, and transfer into a freezer container. Follow the linked fruit guide for preparation.",
+    "quality": "Expect a softer texture when thawed.",
+    "sourceId": "freezing"
+  }
+}

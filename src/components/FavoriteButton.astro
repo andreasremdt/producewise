@@ -1,0 +1,22 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  id: string;
+  name: string;
+  full?: boolean;
+}
+const { id, name, full = false } = Astro.props;
+---
+
+<button
+  class:list={['favorite-button', { 'favorite-full': full }]}
+  type="button"
+  data-favorite={id}
+  data-name={name}
+  aria-label={`Save ${name}`}
+  aria-pressed="false"
+  title={`Save ${name}`}
+>
+  <Icon name="heart" size={19} />
+  {full && <span data-favorite-label>Save guide</span>}
+</button>

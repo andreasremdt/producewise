@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Catalogue from '../components/Catalogue.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="Your saved guides">
+  <div class="page-intro">
+    <span class="eyebrow">YOUR LITTLE COLLECTION</span>
+    <h1>
+      Keep the good
+      <br />
+      <span>stuff close.</span>
+    </h1>
+    <p>Saved in this browser, on this device. No account needed.</p>
+  </div>
+  <div class="offline-help">
+    <Icon name="download" />
+    <div>
+      <strong>Ready for the kitchen. Even offline.</strong>
+      <p>
+        A “Ready offline” label means a guide, its photo, and nutrition have downloaded
+        successfully. Browser storage can be cleared or evicted. Reopen here to check or refresh.
+      </p>
+    </div>
+    <button class="button button-outline" data-refresh-offline>
+      Refresh downloads <Icon name="refresh" size={16} />
+    </button>
+  </div>
+  <Catalogue favorites />
+</Layout>

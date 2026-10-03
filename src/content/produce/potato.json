@@ -1,0 +1,70 @@
+{
+  "name": "Potatoes",
+  "singular": "Potato",
+  "aliases": ["potato", "potatoes", "spud", "spuds"],
+  "category": "vegetable",
+  "tags": ["root vegetables", "pantry"],
+  "color": "#F1E6D7",
+  "description": "A dependable kitchen staple. Give whole potatoes a dark, ventilated spot rather than a sunny countertop.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Cool, dark place",
+      "time": "2–4 weeks",
+      "preparation": "Keep dry with good airflow.",
+      "advice": "Store away from light in a cool place; scrub before cooking.",
+      "caution": "A warm kitchen may shorten this estimate considerably.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose firm, undamaged potatoes.",
+    "Avoid potatoes with extensive greening or decay."
+  ],
+  "freshness": "Discard potatoes with extensive sprouting, shriveling, or deep greening. These changes can accompany increased glycoalkaloids; see the linked extension guidance.",
+  "leftovers": [
+    "Use sound potatoes in a tray of roasted vegetables.",
+    "Turn cooked potatoes into a warm salad."
+  ],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "University of Maryland Extension · Storing garden produce",
+      "url": "https://extension.umd.edu/resource/storing-garden-fruits-and-vegetables",
+      "supports": "Home storage, keeping-time estimates, and preparation"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "potato",
+      "title": "University of Minnesota Extension · Growing potatoes",
+      "url": "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-potatoes",
+      "supports": "Light exposure, green skin, and handling"
+    },
+    {
+      "id": "discard",
+      "title": "Iowa State University Extension · Sprouting or greening potatoes",
+      "url": "https://blogs.extension.iastate.edu/answerline/2024/04/02/spouting-or-greening-potatoes-keep-or-toss/",
+      "supports": "When to discard potatoes with extensive sprouting or greening"
+    }
+  ],
+  "slug": "potato",
+  "nutrition": "potato",
+  "order": 6,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "potato.jpg",
+    "alt": "Potatoes on a plain background",
+    "author": "Fir0002/Flagstaffotos",
+    "source": "https://commons.wikimedia.org/wiki/File:Potato_and_cross_section.jpg",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  }
+}

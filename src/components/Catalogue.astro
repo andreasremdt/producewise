@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import ProduceCard from './ProduceCard.astro';
+import Icon from './Icon.astro';
+interface Props {
+  home?: boolean;
+  favorites?: boolean;
+}
+const { home = false, favorites = false } = Astro.props;
+const entries = (await getCollection('produce')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<section data-catalogue data-home={home} data-favorites={favorites} aria-label="Produce guides">
+  <div class="section-heading">
+    <div>
+      <h2>
+        {favorites ? 'Your saved guides' : home ? 'A fresh place to start' : 'Find your produce'}
+      </h2>
+      <p>
+        {favorites
+          ? 'Your favorites, all in one little corner.'
+          : home
+            ? 'Everyday favorites. A little know-how for each one.'
+            : 'Good storage starts with knowing what you’ve got.'}
+      </p>
+    </div>
+    {home && (
+      <a class="text-link" href="/browse/">
+        Browse all produce <Icon name="arrow" size={17} />
+      </a>
+    )}
+  </div>
+  {!home && !favorites && (
+    <form class="search-form catalogue-search" action="/browse/" role="search">
+      <Icon name="search" />
+      <label class="sr-only" for="catalogue-query">
+        Search produce
+      </label>
+      <input
+        id="catalogue-query"
+        type="search"
+        name="q"
+        placeholder="Search fruits, vegetables, or another name…"
+        autocomplete="off"
+        data-query
+      />
+      <button class="button" type="submit">
+        Search
+      </button>
+    </form>
+  )}
+  {!favorites && (
+    <div class="catalogue-toolbar">
+      <div class="filter-group" role="group" aria-label="Filter produce">
+        <button data-filter="all" aria-pressed="true">
+          <Icon name="grid" size={16} />
+          All produce <span>{entries.length}</span>
+        </button>
+        <button data-filter="fruit" aria-pressed="false">
+          <Icon name="leaf" size={17} />
+          Fruits
+        </button>
+        <button data-filter="vegetable" aria-pressed="false">
+          <Icon name="carrot" size={17} />
+          Vegetables
+        </button>
+      </div>
+      <label class="sort-label">
+        Sort by{' '}
+        <select data-sort aria-label="Sort produce">
+          <option value="popular">Featured</option>
+          <option value="az">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+  )}
+  <p class="result-count" data-result-count aria-live="polite" aria-atomic="true"></p>
+  <div class="produce-grid">
+    {entries.map((entry, i) => (
+      <ProduceCard entry={entry} eager={home && i < 4} />
+    ))}
+  </div>
+  <div class="empty-state" data-empty hidden>
+    <div class="empty-icon">
+      <Icon name={favorites ? 'heart' : 'search'} size={32} />
+    </div>
+    <h2>{favorites ? 'Good things are worth keeping.' : 'No produce found'}</h2>
+    <p data-empty-message>
+      {favorites
+        ? 'Tap the heart on a guide to save it here. We’ll also download it for offline use when your browser supports it.'
+        : 'Try a common name, like banana, or another name, like aubergine.'}
+    </p>
+    <a class="button" href="/browse/">
+      {favorites ? 'Explore produce' : 'See all produce'}
+      <Icon name="arrow" size={17} />
+    </a>
+  </div>
+  {home && (
+    <div class="browse-more">
+      <a class="button button-outline" href="/browse/">
+        Explore all {entries.length} guides <Icon name="arrow" size={17} />
+      </a>
+    </div>
+  )}
+</section>

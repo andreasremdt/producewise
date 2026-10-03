@@ -1,0 +1,81 @@
+{
+  "name": "Mangos",
+  "singular": "Mango",
+  "aliases": ["mango", "mangos", "mangoes"],
+  "category": "fruit",
+  "tags": ["tropical", "ripens at home"],
+  "color": "#F8DFAB",
+  "description": "Sunny, juicy flesh wrapped around a flat stone. Judge ripeness by feel, because skin color varies by variety.",
+  "defaultCondition": "ripe",
+  "storage": [
+    {
+      "condition": "ripe",
+      "label": "Ripe",
+      "location": "Refrigerator",
+      "time": "Up to 5 days",
+      "preparation": "Store whole until needed.",
+      "advice": "Move a ripe mango into the fridge when it gives slightly to gentle pressure.",
+      "caution": "Skin color alone does not tell you whether it is ripe.",
+      "sourceIds": ["storage"]
+    },
+    {
+      "condition": "unripe",
+      "label": "Unripe",
+      "location": "Room temperature",
+      "time": "Until slightly soft",
+      "preparation": "Leave whole on the counter.",
+      "advice": "Let a firm mango ripen at room temperature and check it daily.",
+      "caution": "Do not refrigerate before it has ripened.",
+      "sourceIds": ["storage"]
+    },
+    {
+      "condition": "cut",
+      "label": "Cut",
+      "location": "Refrigerator",
+      "time": "Use promptly",
+      "preparation": "Refrigerate in an airtight container.",
+      "advice": "Wash the fruit before peeling or cutting; keep the prepared flesh chilled.",
+      "caution": "Keep cut produce separate from raw meat.",
+      "sourceIds": ["storage", "safety"]
+    }
+  ],
+  "buying": [
+    "Choose a slightly yielding mango for eating soon.",
+    "A firmer fruit can finish ripening at home."
+  ],
+  "freshness": "Avoid damaged fruit and discard any that looks rotten. Ripeness is about texture, not a guarantee of safety.",
+  "leftovers": ["Dice into a fresh salsa.", "Blend into a smoothie or yogurt bowl."],
+  "tips": ["A ripe mango should give a little, much like a ripe peach."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "National Mango Board · Ripening and storing",
+      "url": "https://www.mango.org/ripening-and-storing-mangos/",
+      "supports": "Ripeness, buying, refrigeration, and freezing"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    }
+  ],
+  "slug": "mango",
+  "nutrition": "mango",
+  "order": 4,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "mango.jpg",
+    "alt": "Mangos on a plain background",
+    "author": "Fir0002/Flagstaffotos",
+    "source": "https://commons.wikimedia.org/wiki/File:Mango_and_cross_section_edit.jpg",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Peel and cut ripe mango into pieces. Freeze on a tray, then put into a sealed freezer container.",
+    "quality": "Use thawed pieces in smoothies or purées; the texture will be softer.",
+    "sourceId": "storage"
+  }
+}

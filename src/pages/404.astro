@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Layout title="Guide not found">
+  <div class="empty-state page-empty">
+    <span class="eyebrow">404 · A LITTLE LOST?</span>
+    <h1>
+      That one’s not
+      <br />
+      in our basket.
+    </h1>
+    <p>
+      The guide may have moved, or we haven’t added it yet.
+      <br />
+      Let’s find something fresh.
+    </p>
+    <a href="/browse/" class="button">
+      Browse produce <Icon name="arrow" size={17} />
+    </a>
+  </div>
+</Layout>

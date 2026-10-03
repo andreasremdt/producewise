@@ -1,0 +1,66 @@
+{
+  "name": "Zucchini",
+  "singular": "Zucchini",
+  "aliases": ["zucchini", "zucchinis", "courgette", "courgettes", "summer squash"],
+  "category": "vegetable",
+  "tags": ["summer squash", "cooking vegetables"],
+  "color": "#E4EDD8",
+  "description": "Known as courgette in many kitchens. This tender summer squash works in everything from fritters to quick breads.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "4–5 days",
+      "preparation": "Keep whole until ready to use.",
+      "advice": "Store in the crisper and wash before cutting.",
+      "caution": "Buy only what you can use within a few days.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose firm, undamaged squash.",
+    "Smaller tender squash suit slicing and quick cooking."
+  ],
+  "freshness": "Discard rotten produce. Use package instructions for pre-cut zucchini.",
+  "leftovers": ["Grate into fritters or a quick bread.", "Sauté thin slices with garlic."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "Food Keeper · University of Georgia Extension",
+      "url": "https://extension.uga.edu/content/dam/extension-county-offices/gwinnett-county/facs/Food_Keeper_Guide.pdf",
+      "supports": "Home refrigerator storage estimates"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing summer squash",
+      "url": "https://nchfp.uga.edu/how/freeze/vegetable/freezing-summer-squash/",
+      "supports": "Preparation before freezing and preservation method"
+    }
+  ],
+  "slug": "zucchini",
+  "nutrition": "zucchini",
+  "order": 9,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "zucchini.jpg",
+    "alt": "Zucchini on a plain background",
+    "author": "Evan-Amos",
+    "source": "https://commons.wikimedia.org/wiki/File:Zucchini-Whole.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Wash and cut into ½-inch slices. Water-blanch for 3 minutes, cool promptly, drain, package, and freeze.",
+    "quality": "The texture softens; use in cooked meals.",
+    "sourceId": "freezing"
+  }
+}

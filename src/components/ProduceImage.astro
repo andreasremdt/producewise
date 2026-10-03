@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props {
+  id: string;
+  alt: string;
+  class?: string;
+  eager?: boolean;
+}
+const { id, alt, class: className, eager = false } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('../assets/produce/*.jpg', {
+  eager: true,
+});
+const source = images[`../assets/produce/${id}.jpg`]?.default;
+---
+
+{source ? (
+  <Image
+    src={source}
+    alt={alt}
+    width={640}
+    format="webp"
+    quality={85}
+    loading={eager ? 'eager' : 'lazy'}
+    class={className}
+  />
+) : (
+  <div class="image-fallback" role="img" aria-label={alt}>
+    Image unavailable
+  </div>
+)}

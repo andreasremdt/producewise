@@ -1,0 +1,672 @@
+[
+  {
+    "id": "avocado",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2710824,
+    "dataType": "Foundation",
+    "description": "Avocado, Hass, peeled, raw",
+    "preparation": "raw Hass avocado, peeled; flesh only",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2710824/nutrients",
+    "publicationDate": "10/31/2024",
+    "importedAt": "2026-10-03T10:12:50.912Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 206.0493,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 8.3235,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 1.8125,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 20.31,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber",
+        "value": null,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 0,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 576.4,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "banana",
+    "provider": "USDA FoodData Central",
+    "fdcId": 1105314,
+    "dataType": "Foundation",
+    "description": "Bananas, ripe and slightly ripe, raw",
+    "preparation": "raw, ripe or slightly ripe; peel removed",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/1105314/nutrients",
+    "publicationDate": "4/1/2020",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 1008,
+        "name": "Energy",
+        "value": 97,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 23,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.74,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.29,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 1.7,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 12.3,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 326,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "strawberry",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2346409,
+    "dataType": "Foundation",
+    "description": "Strawberries, raw",
+    "preparation": "raw; edible fruit, tops removed",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2346409/nutrients",
+    "publicationDate": "10/28/2022",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 32.66565,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 7.964375,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.640625,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.22,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber",
+        "value": null,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 59.62,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 160.7,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "blueberry",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2346411,
+    "dataType": "Foundation",
+    "description": "Blueberries, raw",
+    "preparation": "raw; edible berries",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2346411/nutrients",
+    "publicationDate": "10/28/2022",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 57.384621,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 14.571775,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.703125,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.3063,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber",
+        "value": null,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 8.059,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 85.64,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "mango",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2710833,
+    "dataType": "Foundation",
+    "description": "Mango, Tommy Atkins, peeled, raw",
+    "preparation": "raw Tommy Atkins mango, peeled; flesh only",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2710833/nutrients",
+    "publicationDate": "10/31/2024",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 61.635825,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 15.265,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.5625,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.5725,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 1.753,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 25.5,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 165,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "spinach",
+    "provider": "USDA FoodData Central",
+    "fdcId": 168462,
+    "dataType": "SR Legacy",
+    "description": "Spinach, raw",
+    "preparation": "raw; edible leaves",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/168462/nutrients",
+    "publicationDate": "4/1/2019",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "No raw spinach match in the reviewed Foundation raw-food search; SR Legacy supplies one coherent raw record.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 1008,
+        "name": "Energy",
+        "value": 23,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 3.63,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 2.86,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.39,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 2.2,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 28.1,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 558,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "potato",
+    "provider": "USDA FoodData Central",
+    "fdcId": 170026,
+    "dataType": "SR Legacy",
+    "description": "Potatoes, flesh and skin, raw",
+    "preparation": "raw; flesh and skin",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/170026/nutrients",
+    "publicationDate": "4/1/2019",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "SR Legacy retains flesh and skin; the available Foundation matches are peeled and would change the intended basis.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 1008,
+        "name": "Energy",
+        "value": 77,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 17.49,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 2.05,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.09,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 2.1,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 19.7,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 425,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "carrot",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2258586,
+    "dataType": "Foundation",
+    "description": "Carrots, mature, raw",
+    "preparation": "raw; mature carrots, edible root",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2258586/nutrients",
+    "publicationDate": "4/28/2022",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 44.978589,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 10.26755,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.94125,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.3506,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 3.095,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C",
+        "value": null,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 279.6,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "eggplant",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2685577,
+    "dataType": "Foundation",
+    "description": "Eggplant, raw",
+    "preparation": "raw; edible fruit",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2685577/nutrients",
+    "publicationDate": "4/18/2024",
+    "importedAt": "2026-10-03T10:12:50.914Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 22.35856525,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 5.399325,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.851875,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.12,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 2.448,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 0.8,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 222.1,
+        "unit": "mg"
+      }
+    ]
+  },
+  {
+    "id": "zucchini",
+    "provider": "USDA FoodData Central",
+    "fdcId": 2685568,
+    "dataType": "Foundation",
+    "description": "Squash, summer, green, zucchini, includes skin, raw",
+    "preparation": "raw green zucchini; includes skin",
+    "basis": "100 g edible portion",
+    "basisGrams": 100,
+    "sourceUrl": "https://fdc.nal.usda.gov/food-details/2685568/nutrients",
+    "publicationDate": "4/18/2024",
+    "importedAt": "2026-10-03T10:12:50.915Z",
+    "reviewedAt": "2026-10-03",
+    "reviewedBy": "ProduceWise initial source review (AI-assisted)",
+    "selectionReason": "Foundation Foods match; the displayed form and variety are explicitly labeled.",
+    "nutrients": [
+      {
+        "key": "energy",
+        "nutrientId": 2048,
+        "name": "Energy (Atwater Specific Factors)",
+        "value": 16,
+        "unit": "kcal"
+      },
+      {
+        "key": "carbohydrate",
+        "nutrientId": 1005,
+        "name": "Carbohydrate, by difference",
+        "value": 3.27,
+        "unit": "g"
+      },
+      {
+        "key": "protein",
+        "nutrientId": 1003,
+        "name": "Protein",
+        "value": 0.984375,
+        "unit": "g"
+      },
+      {
+        "key": "fat",
+        "nutrientId": 1004,
+        "name": "Total lipid (fat)",
+        "value": 0.205,
+        "unit": "g"
+      },
+      {
+        "key": "fiber",
+        "nutrientId": 1079,
+        "name": "Fiber, total dietary",
+        "value": 0.7525,
+        "unit": "g"
+      },
+      {
+        "key": "vitamin-c",
+        "nutrientId": 1162,
+        "name": "Vitamin C, total ascorbic acid",
+        "value": 15,
+        "unit": "mg"
+      },
+      {
+        "key": "potassium",
+        "nutrientId": 1092,
+        "name": "Potassium, K",
+        "value": 225.8,
+        "unit": "mg"
+      }
+    ]
+  }
+]

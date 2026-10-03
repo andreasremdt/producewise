@@ -1,0 +1,87 @@
+{
+  "name": "Avocados",
+  "singular": "Avocado",
+  "aliases": ["avocado", "avocados", "alligator pear"],
+  "category": "fruit",
+  "tags": ["creamy", "ripens at home"],
+  "color": "#E7F0D3",
+  "description": "Creamy, mellow, and worth catching at just the right moment. A little give tells you more than color alone.",
+  "defaultCondition": "ripe",
+  "storage": [
+    {
+      "condition": "ripe",
+      "label": "Ripe",
+      "location": "Refrigerator",
+      "time": "2–3 days",
+      "preparation": "Keep whole until you need it.",
+      "advice": "Once the fruit yields gently in your palm, move it to the fridge to slow further ripening.",
+      "caution": "Firm avocado? Let it ripen on the counter first.",
+      "sourceIds": ["storage"]
+    },
+    {
+      "condition": "unripe",
+      "label": "Unripe",
+      "location": "Room temperature",
+      "time": "2–5 days to ripen",
+      "preparation": "Place in a paper bag to encourage ripening.",
+      "advice": "Check daily for a little give under gentle pressure, then refrigerate.",
+      "caution": "Avoid squeezing with your fingertips; that can bruise the flesh.",
+      "sourceIds": ["storage"]
+    },
+    {
+      "condition": "cut",
+      "label": "Cut",
+      "location": "Refrigerator",
+      "time": "Use promptly",
+      "preparation": "Cover the exposed flesh and refrigerate.",
+      "advice": "Wash the outside before cutting. Keep the cut fruit covered in a clean container.",
+      "caution": "A color change is not a reliable safety test.",
+      "sourceIds": ["safety"]
+    }
+  ],
+  "buying": [
+    "For today, choose fruit that gives a little under gentle palm pressure.",
+    "For later in the week, choose a firmer avocado."
+  ],
+  "freshness": "Avoid damaged fruit. Discard any that looks rotten; do not use appearance alone to judge safety.",
+  "leftovers": ["Mash into a lime dressing.", "Spread on toast with cracked pepper."],
+  "tips": ["Check ripeness in your palm to avoid bruising."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "California Avocado Commission · Choose and use",
+      "url": "https://californiaavocado.com/how-to/how-to-choose-and-use-an-avocado/",
+      "supports": "Ripeness, buying, and 2–3 day refrigerated keeping time"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing avocados",
+      "url": "https://nchfp.uga.edu/how/freeze/fruits/freezing-avocados/",
+      "supports": "Preparation before freezing and preservation method"
+    }
+  ],
+  "slug": "avocado",
+  "nutrition": "avocado",
+  "order": 0,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "avocado.jpg",
+    "alt": "Avocados on a plain background",
+    "author": "Muhammad Mahdi Karim",
+    "source": "https://commons.wikimedia.org/wiki/File:Avocado_with_cross_section_edit.jpg",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "For the tested purée method, peel and mash ripe flesh with 1 tablespoon lemon juice per 2 avocados. Pack with ½ inch headspace, seal, and freeze.",
+    "quality": "Best used as a purée or spread after thawing.",
+    "sourceId": "freezing"
+  }
+}

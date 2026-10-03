@@ -1,0 +1,66 @@
+{
+  "name": "Spinach",
+  "singular": "Spinach",
+  "aliases": ["spinach", "baby spinach"],
+  "category": "vegetable",
+  "tags": ["leafy greens", "delicate"],
+  "color": "#E4EDCF",
+  "description": "Tender green leaves for salads, soups, and quick sautés. Store them loosely and keep excess moisture away.",
+  "defaultCondition": "whole",
+  "storage": [
+    {
+      "condition": "whole",
+      "label": "Whole",
+      "location": "Refrigerator",
+      "time": "2–4 days",
+      "preparation": "Keep unwashed in a perforated bag.",
+      "advice": "Refrigerate loose leaves promptly without packing them tightly.",
+      "caution": "For packaged spinach, follow the label and use-by instructions.",
+      "sourceIds": ["storage"]
+    }
+  ],
+  "buying": [
+    "Choose fresh-looking, undamaged leaves.",
+    "Buy pre-cut or bagged greens from a refrigerated display."
+  ],
+  "freshness": "Discard rotten leaves. Follow package dates and any recall notices; freshness checks do not detect every food-safety risk.",
+  "leftovers": ["Stir into a soup just before serving.", "Wilt into a pan of beans."],
+  "sources": [
+    {
+      "id": "storage",
+      "title": "University of Maryland Extension · Storing garden produce",
+      "url": "https://extension.umd.edu/resource/storing-garden-fruits-and-vegetables",
+      "supports": "Home storage, keeping-time estimates, and preparation"
+    },
+    {
+      "id": "safety",
+      "title": "FDA · Selecting and serving produce safely",
+      "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely",
+      "supports": "Washing, refrigeration, buying, and spoiled produce"
+    },
+    {
+      "id": "freezing",
+      "title": "National Center for Home Food Preservation · Freezing greens including spinach",
+      "url": "https://nchfp.uga.edu/how/freeze/vegetable/freezing-greens-including-spinach/",
+      "supports": "Preparation before freezing and preservation method"
+    }
+  ],
+  "slug": "spinach",
+  "nutrition": "spinach",
+  "order": 5,
+  "reviewedAt": "2026-10-03",
+  "image": {
+    "src": "spinach.jpg",
+    "alt": "Spinach on a plain background",
+    "author": "Nillerdk",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinach_leaves.jpg",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "modifications": "Resized and converted to WebP for display; color blended with card background using CSS."
+  },
+  "freezing": {
+    "instructions": "Wash and trim. Water-blanch spinach for 2 minutes, cool promptly, drain, and pack with ½ inch headspace before freezing.",
+    "quality": "Best for cooked dishes rather than a fresh salad.",
+    "sourceId": "freezing"
+  }
+}

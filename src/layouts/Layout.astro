@@ -1,0 +1,170 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+const {
+  title = 'A little knowledge. A lot more fresh.',
+  description = 'Know where to store your fruits and vegetables, how long they keep, and how to make the most of every bite.',
+  image = '/icons/share.png',
+} = Astro.props;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/', label: 'Discover', icon: 'home' },
+  { href: '/browse/', label: 'Browse produce', icon: 'grid' },
+  { href: '/favorites/', label: 'Saved guides', icon: 'heart' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#285c41" />
+    <meta name="description" content={description} />
+    <title>{title} | ProduceWise</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta property="og:title" content={`${title} | ProduceWise`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="ProduceWise home">
+        <span class="brand-mark">
+          <Icon name="leaf" size={23} />
+        </span>
+        Produce<span>Wise</span>
+        <span class="brand-period">.</span>
+      </a>
+      <p class="sidebar-label">A LITTLE EVERYDAY WISDOM</p>
+      <nav aria-label="Primary navigation">
+        {nav.map((n) => (
+          <a
+            href={n.href}
+            class:list={['nav-link', { active: path === n.href }]}
+            aria-current={path === n.href ? 'page' : undefined}
+          >
+            <Icon name={n.icon} />
+            {n.label}
+            {n.icon === 'heart' && (
+              <span class="saved-count" data-saved-count>
+                0
+              </span>
+            )}
+          </a>
+        ))}
+      </nav>
+      <div class="sidebar-secondary">
+        <a
+          href="/about/"
+          class:list={['nav-link', { active: path === '/about/' }]}
+          aria-current={path === '/about/' ? 'page' : undefined}
+        >
+          <Icon name="book" />
+          About & sources
+        </a>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note">
+          <span class="note-leaf">
+            <Icon name="leaf" size={26} />
+          </span>
+          <h3>
+            Less waste.
+            <br />
+            More goodness.
+          </h3>
+          <p>
+            Small storage habits.
+            <br />A fresher everyday.
+          </p>
+          <a href="/about/">
+            Our little mission <Icon name="arrow" size={16} />
+          </a>
+        </div>
+        <span class="made-with">Made for your everyday kitchen.</span>
+      </div>
+    </aside>
+    <div class="app-shell">
+      <header class="topbar">
+        <span class="topbar-caption">
+          <span class="status-dot"></span>Your everyday produce companion
+        </span>
+        <a class="mobile-brand brand" href="/">
+          <span class="brand-mark">
+            <Icon name="leaf" size={21} />
+          </span>
+          ProduceWise.
+        </a>
+        <div class="topbar-actions">
+          <span class="offline-indicator" data-connection hidden>
+            <Icon name="offline" size={16} />
+            You’re offline
+          </span>
+          <a href="/browse/" class="topbar-search" aria-label="Search produce">
+            <Icon name="search" />
+          </a>
+          <a class="saved-top" href="/favorites/">
+            <Icon name="heart" size={18} />
+            <span>My saved guides</span>
+          </a>
+        </div>
+      </header>
+      <main id="main" class="main-content">
+        <slot />
+      </main>
+      <footer class="footer">
+        <a class="footer-brand" href="/">
+          ProduceWise<span>.</span>
+        </a>
+        <span>A little care goes a long way.</span>
+        <a href="/about/">
+          Sources & credits <Icon name="arrow" size={14} />
+        </a>
+      </footer>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      {[...nav, { href: '/about/', label: 'About', icon: 'book' }].map((n) => (
+        <a
+          href={n.href}
+          class:list={{ active: path === n.href }}
+          aria-current={path === n.href ? 'page' : undefined}
+        >
+          <Icon name={n.icon} />
+          <span>
+            {n.label === 'Browse produce'
+              ? 'Browse'
+              : n.label === 'Saved guides'
+                ? 'Saved'
+                : n.label}
+          </span>
+        </a>
+      ))}
+    </nav>
+    <div class="toast" role="status" aria-live="polite" data-toast hidden></div>
+    <noscript>
+      <p class="noscript-note">
+        All guides are readable without JavaScript. Search, filters, saving, and offline downloads
+        need JavaScript enabled.
+      </p>
+    </noscript>
+    <script>
+      import '../scripts/app.ts';
+    </script>
+  </body>
+</html>
